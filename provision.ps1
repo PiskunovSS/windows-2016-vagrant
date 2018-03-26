@@ -154,7 +154,7 @@ $account.Userflags = $AdsNormalAccount -bor $AdsDontExpirePassword
 $account.SetInfo()
 
 Write-Host 'Setting the Administrator account properties...'
-$account = [ADSI]'WinNT://./Administrator'
+$account = [ADSI]'WinNT://./Администратор'
 $account.Userflags = $AdsNormalAccount -bor $AdsDontExpirePassword -bor $AdsAccountDisable
 $account.SetInfo()
 
