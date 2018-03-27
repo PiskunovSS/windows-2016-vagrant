@@ -5,6 +5,6 @@ If ($? -ne "True") { Exit 1}
 # Получаем результат работы provision через WinRM
 $sb = { get-content C:\Windows\System32\file_test.txt }
 Invoke-Command -Session $s -ScriptBlock $sb
-If ($? -ne "True") { echo 'WinRM and provision check error'; Exit 1}
+If ($? -ne "True") { Write-Output 'WinRM and provision check error'; Exit 1}
 Get-PSSession | Remove-PSSession
-echo 'WinRM and provision check OK'
+Write-Output 'WinRM and provision check OK'
