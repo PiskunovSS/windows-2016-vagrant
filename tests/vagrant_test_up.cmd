@@ -8,7 +8,7 @@ TIMEOUT /T 60
 
 echo 3. Создаем тестовую машину из бокса
 cd example
-start /WAIT /b vagrant up --provider=virtualbox
+start /WAIT vagrant up --provider=virtualbox
 if NOT %ERRORLEVEL% == 0 ( echo Vagrant test up error & EXIT /B 1)
 
 
