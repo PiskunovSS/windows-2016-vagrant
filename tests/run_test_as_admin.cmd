@@ -11,4 +11,4 @@ call tests/vagrant_test_up.cmd
 if NOT %ERRORLEVEL% == 0 ( cd /d %~dp0 & call tests/clean_after_test.cmd & echo Тест завершен с ошибкой & EXIT /B 1)
 
 echo Тест выполнен успешно
-TIMEOUT /T 60
+TIMEOUT /T 300

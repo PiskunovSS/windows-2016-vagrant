@@ -1,9 +1,9 @@
 {
   "variables": {
     "disk_size": "61440",
-    "iso_url": "D:/14393.0.161119-1705.RS1_REFRESH_SERVER_EVAL_X64FRE_RU-RU.ISO",
-    "iso_checksum": "",
-    "iso_checksum_type": "none"
+    "iso_url": "http://download.microsoft.com/download/0/D/4/0D41501C-EEBC-4481-8A37-14A56A64BFDA/14393.0.161119-1705.RS1_REFRESH_SERVER_EVAL_X64FRE_RU-RU.ISO",
+    "iso_checksum": "53C3FFC7B0B9E2D8AAA3A91E430ED2308C77E63E",
+    "iso_checksum_type": "sha1"
   },
   "builders": [
     {
